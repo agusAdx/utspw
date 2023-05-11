@@ -1,0 +1,126 @@
+:root{
+
+    /*color*/
+    --btn-color: #145369;
+    --box-color: #F68E14;
+    --font-color: #EC9B23;
+    /*font*/
+    --main-font: 'Poppins', sans-serif;
+    --logo-font: 'Pacifico', cursive;
+  
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  
+  *{
+    font-size: var(--main-font) ;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  
+  }
+  
+  .main {
+    font-family: var(--main-font);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left:40%;
+    flex-direction: column;
+    background-color: #145369;
+    width: 500px;
+    height: 825px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 7px 7px 10px 3px #24004628;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+  }
+  
+  /*checkbox to switch from sign up to login*/
+  #chk {
+    display: none;
+  }
+  
+  /*Login*/
+  .login {
+    position: relative;
+    width: 100%;
+    height: 660px;
+  }
+  
+  .login label {
+    margin: 25% 0 5%;
+  }
+  
+  label {
+    color: #fff;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+  }
+  
+  .input {
+    width: 100%;
+    height: 40px;
+    background: #e0dede;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+  }
+  
+  /*Register*/
+  .register {
+    background: #eee;
+    
+    border-radius: 60% / 10%;
+    transform: translateY(5%);
+    transition: .8s ease-in-out;
+  }
+  
+  .register label {
+    color: #145369;
+    transform: scale(.6);
+  }
+  
+  #chk:checked ~ .register {
+    transform: translateY(-60%);
+  }
+  
+  #chk:checked ~ .register label {
+    transform: scale(1);
+    margin: 10% 0 5%;
+  }
+  
+  #chk:checked ~ .login label {
+    transform: scale(.6);
+    margin: 5% 0 5%;
+  }   
+  /*Button*/
+  .form button {
+    width: 85%;
+    height: 40px;
+    margin: 12px auto 10%;
+    color: #fff;
+    background: #EC9B23;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-in;
+  }
+  
+  .form button:hover {
+    background-color: #28ba8c;
+  }

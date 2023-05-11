@@ -1,0 +1,146 @@
+:root{
+
+    /*color*/
+    --btn-color: #145369;
+    --box-color: #F68E14;
+    --font-color: #EC9B23;
+    /*font*/
+    --main-font: 'Poppins', sans-serif;
+    --logo-font: 'Pacifico', cursive;
+  
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  
+  *{
+    font-family: var(--main-font) ;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  .back {
+    position: absolute;
+    margin-left: 80px;
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #EC9B23;
+   }
+   .back span b{
+    color: white;
+   }
+   
+   .back> svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+   .back:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   .back:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+  
+  .detail{
+    background-color: #E4F0F4;
+    width: 900px;
+    height: 700px;
+    margin: 60px 25%;
+  }
+  .foto{
+    position: absolute;
+    margin:40px 0px 0px 40px ;
+    background-color: #145369;
+    width: 310px;
+    height: 260px;
+    border: 3px solid #EC9B23;
+  }
+  
+  img{
+    width: 300px;
+    height: 250px;
+    margin-top:40px ;
+    margin-left: 40px;
+  }
+  
+  .penjelasan{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 410px;
+    text-align: 50px;
+  }
+  
+  .penjelasan h1{
+    font-size: 30px;
+    color: #145369;
+  }
+  
+  .penjelasan p{
+    font-size: 20px;
+    margin-top: 30px;
+    color: #145369;
+  }
+  
+  .list{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 100px;
+  }
+  
+  .list ul{
+    color: #145369;
+    font-size: 20px;
+  }
+   .list span{
+    position: absolute;
+    color: #145369;
+    margin-top: 60px;
+    font-size: 20pxpx;
+  }
+  .beli{
+    margin-right: 100px;
+      margin: 100px 0px 140px 0px;
+      position: relative;
+      padding: 1em 3em;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 500;
+      color: #000;
+      background-color: #EC9B23;
+      border: none;
+      border-radius: 45px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+  }
+  .beli b{
+    color: white;
+  }
+  
+  .beli:hover {
+    background-color: #145369;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .beli:active {
+    transform: translateY(-1px);
+  }
